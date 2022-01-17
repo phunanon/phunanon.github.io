@@ -7,28 +7,34 @@
   font-family: "Noto Sans", sans-serif;
 }
 
-body {
-  margin: 16mm;
-  width: 210mm;
-  height: 297mm;
-  padding: 16mm;
-  outline: 0.1rem solid #000;
-  font-size: 1.1rem;
+:root {
+  --scale: 0.75;
+}
+
+page {
+  display: inline-block;
+  vertical-align: top;
+  margin: calc(16mm * var(--scale));
+  width: calc(210mm * var(--scale));
+  height: calc(297mm * var(--scale));
+  padding: calc(16mm * var(--scale));
+  font-size: calc(1.1rem * var(--scale));
+  outline: 0.1em solid #000;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 
 h2 {
-  padding: 1rem;
+  padding: 0.5em;
   text-align: center;
 }
 
 h3 {
   font-weight: normal;
-  font-size: 1.3rem;
-  padding-bottom: 0.5rem;
+  font-size: 1.3em;
+  padding-bottom: 0.5em;
 }
 
 h4 {
@@ -37,7 +43,7 @@ h4 {
 }
 
 p {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5em;
 }
 
 a {
@@ -50,7 +56,7 @@ a {
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0em 1rem;
+  gap: 0em 1em;
   grid-template-areas:
     "Name Name Profile Profile"
     "Area Email Profile Profile"
@@ -79,12 +85,12 @@ a {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto 0fr auto;
-  gap: 0.5rem 0;
+  gap: 0.5em 0;
   grid-auto-flow: row;
   grid-template-areas:
     "University Degree Degree Degree DegreeAward"
     "University Hnd Hnd Hnd HndAward"
-    "Line Line Line Line Line"
+    "Line Line Line . ."
     "College Diploma Diploma Diploma DiplomaAward";
   align-items: center;
 }
@@ -123,8 +129,8 @@ a {
 
 .Line {
   grid-area: Line;
-  background-color: black;
-  height: 0.15rem;
+  background-color: #aaa;
+  height: 0.15em;
   display: block;
 }
 
@@ -132,12 +138,12 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto 1fr 0fr auto 1fr;
-  gap: 1em 1em;
+  gap: 0.5em 1em;
   grid-auto-flow: row;
   grid-template-areas:
     "Inbox Inbox InboxTech"
     "InboxInfo InboxInfo InboxTech"
-    "Line Line Line"
+    "Line Line ."
     "Ge Ge GeTech"
     "GeInfo GeInfo GeTech";
 }
@@ -154,10 +160,6 @@ a {
   grid-area: InboxInfo;
 }
 
-.Line {
-  grid-area: Line;
-}
-
 .GeInfo {
   grid-area: GeInfo;
 }
@@ -172,41 +174,44 @@ a {
 
 .award {
   background-color: #cec;
-  padding: 0.5rem;
+  padding: 0.5em;
   text-align: center;
 }
 
 .business {
-  font-size: 1.3rem;
-  line-height: 3.2rem;
+  font-size: 1.3em;
+  line-height: 3.2em;
 }
 
 .field {
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0.5em;
+  padding: 0.5em;
   background-color: #eee;
 }
 
 tech:first-of-type {
-  border-top: 0.1rem solid #aaa;
+  border-top: 0.1em solid #aaa;
 }
 tech {
   display: block;
-  border-bottom: 0.1rem solid #aaa;
+  border-bottom: 0.1em solid #aaa;
 }
 
 tech span {
   display: inline-block;
   width: 50%;
-  padding: .5rem 0;
+  padding: 0.5em 0;
 }
 
 @page {
   size: A4;
 }
 @media print {
+  :root {
+    --scale: 1;
+  }
   html,
-  body {
+  page {
     width: 210mm;
     height: 297mm;
     margin: 0;
