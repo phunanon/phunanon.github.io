@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Mono:wght@100&display=swap");
 
+@font-face {
+  font-family: "fa";
+  src: url(assets/fontawesome-webfont.woff2);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,31 +40,31 @@ page footer {
   color: #000;
 }
 
-h1 {
+page h1 {
   font-size: 2.5em;
 }
 
-h2 {
+page h2 {
   padding: 0.5em;
   text-align: center;
 }
 
-h3 {
+page h3 {
   font-weight: normal;
   font-size: 1.3em;
   padding-bottom: 0.5em;
 }
 
-.spaced-headers h3 {
+page.spaced-headers h3 {
   padding-top: 0.75em;
 }
 
-h4 {
+page h4 {
   font-weight: normal;
   color: #777;
 }
 
-p {
+page p {
   padding-bottom: 0.5em;
 }
 
@@ -257,4 +262,186 @@ tech span {
     padding: 0;
     outline: none;
   }
+  portfolio, portfolio * {
+    display: none !important;
+  }
+}
+
+portfolio {
+  display: block;
+  text-align: center;
+}
+
+portfolio h1 {
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+portfolio h2,
+portfolio h2 * {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+portfolio a,
+portfolio a img {
+  cursor: pointer;
+  color: #00f;
+}
+portfolio p {
+  line-height: 1.6rem;
+}
+
+article {
+  display: inline-block;
+  max-width: 35rem;
+  margin: 1rem;
+  padding: 1rem;
+  vertical-align: top;
+  text-align: left;
+  border: 0.1rem solid #888;
+}
+article columns {
+  display: inline-flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+}
+article columns column {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+article rows {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+article iframe,
+article img,
+article video {
+  width: 100%;
+  margin: 1rem auto 0rem auto;
+  display: block;
+  max-height: 20rem;
+  border: none;
+  min-height: 10rem;
+  min-width: 10rem;
+}
+article iframe {
+  min-height: 16rem;
+  width: 100%;
+}
+article img {
+  border: 0.1rem solid #000;
+}
+article img.fit {
+  object-fit: contain;
+}
+article img.cover {
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+article h2 .fa {
+  float: right;
+  padding: 0;
+  font-weight: normal;
+}
+
+article.android {
+  border-left: 0.5rem solid rgba(48, 48, 195);
+}
+article.arduino {
+  border-left: 0.5rem solid rgb(48, 156, 164);
+}
+article.SFML {
+  border-left: 0.5rem solid #ee0;
+}
+article.terminal {
+  border-left: 0.5rem solid #000;
+}
+article.HTML {
+  border-left: 0.5rem solid rgb(195, 127, 0);
+}
+article.Csharp {
+  border-left: 0.5rem solid #0c0;
+}
+
+contributions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: max(50%, 30rem);
+  margin: auto;
+}
+contributions h3 {
+  flex-basis: 100%;
+  padding-top: 1rem;
+}
+contributions p {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 20rem;
+  padding: 0.25rem;
+  color: #000;
+  border: 0.1rem solid #888;
+  margin: 0.25rem;
+  position: relative;
+}
+
+@media screen and (max-width: 60rem) {
+  body {
+    padding: 1rem 5vw;
+  }
+  article {
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
+  }
+  half {
+    display: block;
+    width: 100%;
+  }
+  article iframe,
+  article img {
+    height: 10rem;
+    max-width: 20rem;
+  }
+}
+
+/*Font Awesome font styles*/
+.fa {
+  font-family: "fa";
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000a;
+  padding: 0.5rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+.fa:hover {
+  color: #000;
+}
+.fa span {
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+.fa.email:before {
+  content: "\f0e0";
+}
+.fa.twitter:before {
+  content: "\f099";
+}
+.fa.youtube:before {
+  content: "\f16a";
+}
+.fa.telegram:before {
+  content: "\f2c6";
+}
+.fa.github:before {
+  content: "\f113";
+}
+.fa.github2:before {
+  content: "\f1d3";
+}
+.fa.linkedin:before {
+  content: "\f08c";
+}
+.fa.cv:before {
+  content: "\f2c2";
 }

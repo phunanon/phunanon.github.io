@@ -9,9 +9,15 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
     ></script>
+    <script>
+      function DomLoad() {
+        const observer = lozad();
+        observer.observe();
+      }
+    </script>
   </head>
 
-  <body>
+  <body onload="DomLoad()">
     <page>
       <div class="header-container">
         <div class="Name"><h1>Patrick Bowen</h1></div>
@@ -115,6 +121,9 @@
         </li>
         <li>TDD methodology, full user-facing documentation coverage</li>
         <li>Fostered a community of over 300 members, recorded tutorials</li>
+        <li>
+          <a href="https://insitux.github.io"> insitux.github.io </a>
+        </li>
       </ul>
       <h3>Private tutoring</h3>
       <div class="tech-container pt">
@@ -177,5 +186,605 @@
       </p>
       <footer>Last updated 2022/04/23</footer>
     </page>
+    <portfolio>
+      <h1>Enterprise projects & contributions</h1>
+      <h2>2018-19 - Baker Hughes, a GE company</h2>
+      <p>
+        A primarily C# role in the oil & gas industry, with regular
+        collaboration between other industry fields. Due to the nature of the
+        work not much material is available to share.
+      </p>
+      <article class="Csharp">
+        <h2>Poster - Software Dev. in Downhole Eng.</h2>
+        <p>
+          This poster by me was part of a gallery by all interns on site. It
+          shows four screenshots of WinForms projects I developed solo.
+        </p>
+        <a href="assets/poster.png">
+          <img class="cover lozad" data-src="assets/poster.png" />
+          Click to enlarge.
+        </a>
+      </article>
+      <article class="Csharp">
+        <h2>"Sondex Kernel" - MQTT broker</h2>
+        <p>
+          The vision of the software management at the start of my role was to
+          reign-in decades' worth of utilities and software suites to one
+          communication protocol.
+        </p>
+        <p>
+          It was decided to use one akin to MQTT, which would be translated to
+          an embed-suitable protocol on-the-fly. I helped architect and test
+          this new platform with their senior engineer. It became the "Sondex
+          Ultracom" platform.
+        </p>
+        <p>
+          After development, to begin developing a new Ultracom
+          utility&mdash;however small&mdash;required including up to fifteen
+          .NET libraries. It was required to use ever-evolving boilerplate to
+          operate them. I couldn't tolerate this.
+        </p>
+        <p>
+          I was granted the time to investigate solving this issue, and
+          architected what I called the "Kernel." It became the sole dependency
+          on a project, and at runtime would use reflection to orchestrate one
+          communication "daemon" and one or more "modules". The Kernel provided
+          a thin abstraction between the two types of actor, and completely
+          divorced our business logic from our communication logic for any
+          project. It also made "modules" composable between each other, using
+          MQTT. It sincerely was my favourite programming project of all time.
+        </p>
+      </article>
+      <article class="Csharp">
+        <h2>Live WebSocket tool control/monitoring</h2>
+        <columns>
+          <column>
+            <p>
+              As an experiment I developed a C# web-server with an Ultracom MQTT
+              backend, allowing you to remotely monitor and control devices over
+              the internet.
+            </p>
+            <p>
+              The screenshot shows the web-app used, controlling and monitoring
+              a caliper tool &ndash; used to measure the diameter and integrity
+              of oil wells. Here the calipers were depressed by hand on one
+              side.
+            </p>
+            <p>
+              Not only popular with coworkers, but the local visiting school for
+              demonstrations too!
+            </p>
+          </column>
+          <column>
+            <a href="assets/WebSocket Calipers.png">
+              <img
+                class="cover lozad"
+                data-src="assets/WebSocket Calipers.png"
+              />
+              Click to enlarge
+            </a>
+          </column>
+        </columns>
+      </article>
+      <article class="Csharp">
+        <h2>Model-View-Presenter pattern document</h2>
+        <columns>
+          <column>
+            <p>
+              I was made to learn MVP at work&mdash;something I thought wouldn't
+              be of use to me at the time. Since then I've come to fully
+              appreciate software patterns architectures.
+            </p>
+            <p>
+              Older coworkers managed to avoid good practise, resulting in very
+              tightly-coupled, difficult to maintain programs. In an effort to
+              combat this I wrote a document on how&mdash;and why&mdash;to use
+              the Model-View-Presenter pattern in WinForms projects.
+            </p>
+          </column>
+          <column>
+            <a href="assets/MVP Guide.pdf">
+              <img class="cover lozad" data-src="assets/MVP Guide.png" />
+              Click to read PDF
+            </a>
+          </column>
+        </columns>
+      </article>
+      <h2>Miscellaneous contributions</h2>
+      <contributions>
+        <p>3rd party comms. translation</p>
+        <p>Successful investigation and adoption of .NET Core</p>
+        <p>.NET Framework to Core automated porting utility</p>
+        <p>Combining and porting two firmware console utilities into one GUI</p>
+        <p>Ported critical a VB6 app to C#</p>
+        <p>
+          Modernised a critical utility developed in the time of experimental
+          comms.
+        </p>
+        <p>Collaborated in a LabView adapter for Ultracom</p>
+        <p>Proof-of-concept proprietary database C# adapter</p>
+        <p>A simple scripting language for tool control</p>
+        <p>
+          Proof-of-concept deterministic embedded histogram compression, 42%
+          worse-case
+        </p>
+        <p>Aid in revival of Azure DevOps use</p>
+        <p>Co-presented to local school children</p>
+        <p>Presented 45-min Q&A lecture on VBA to 55 UK-wide interns</p>
+        <p>Participated in "Dragon's Den" style Year 7's school activity</p>
+        <h3>Physicist, Mechanical, and Manufacturing collaborations</h3>
+        <p>Histogram bulk experimental analysis suite</p>
+        <p>Monte-Carlo optical simulator implementing Snell's Law</p>
+        <p>Set out and delegated a data processing workflow</p>
+        <p>Collaborated to develop an equipment testbox with soft. utility</p>
+        <p>Virtual oscilloscope over USB & TCP/IP</p>
+        <p>Magnetic field 3-axis diagnostic app</p>
+      </contributions>
+    </portfolio>
+    <portfolio>
+      <h1>Personal & Academic projects</h1>
+      <article class="HTML">
+        <h2>
+          Bachelor's dissertation artefact
+          <a class="fa github" href="https://github.com/phunanon/Competite"></a>
+        </h2>
+        <p>
+          Different sport competitions are implemented with any back-end
+          technology through a HTTP API, synchronised through an immutable
+          message transcript. See screenshots here
+          <a
+            href="https://github.com/phunanon/competite/tree/master/screenshots"
+            >here</a
+          >
+          until I add a gallery to this page; apologies!
+        </p>
+        <a href="assets/CompetiteDiagram.png">
+          <img class="cover lozad" data-src="assets/CompetiteDiagram.png" />
+          Click to enlarge.
+        </a>
+      </article>
+      <article class="arduino">
+        <h2>
+          Arduino & PC programming language
+          <a class="fa github" href="https://github.com/phunanon/Chika"></a>
+        </h2>
+        <p>
+          It's been a dream to have a programmable pocket-PC, and my own
+          programming language. So I am developing a language called Chika in
+          C++. It uses s-expressions, pure functions, immutable values, avoiding
+          heap memory. Already it has a core library and some basic drivers like
+          OLED and keypad. It can even compile <i>on</i> Arduino.
+        </p>
+        <img class="lozad" data-src="assets/Chika-sample.png" />
+      </article>
+      <article class="SFML">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/Infection"></a
+          >Isometric Shooter/Melee Survival
+        </h2>
+        <p>
+          For the Global Games Jam 2018
+          <a href="http://danielshare.co.uk/">another student</a> and I built a
+          game from scratch within 48 hours in C++. Unfortunately, neither of us
+          knew the correct graphical approach at the time, but it was a fun and
+          valuable experience, exposing my limits and abilites!
+        </p>
+        <iframe
+          class="lozad"
+          data-src="https://www.youtube.com/embed/DohsSo4k-ps"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article class="HTML">
+        <h2>
+          <a href="https://ocastio.uk">Ocastio.uk</a> - Online Voting
+          <a class="fa github" href="https://github.com/phunanon/Ocastio"></a>
+        </h2>
+        <p>
+          A totally new platform for managing inter-organisational legislation
+          and voting. Hosted on a DigitalOcean 2.2GHz 1GB Droplet, the
+          application runs on the JVM (Java Virtual Machine), and is written in
+          Clojure - a modern functional-paradigm programming language.
+        </p>
+        <iframe
+          class="lozad"
+          data-src="https://www.youtube.com/embed/fhdzdJuhlPU"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article class="HTML">
+        <h2>
+          Multigloss - a Duolingo clone
+          <a
+            class="fa github"
+            href="https://github.com/phunanon/multigloss"
+          ></a>
+        </h2>
+        <p>
+          An incomplete experiment, looking into ClojureScript and reactive
+          workflow. I really enjoyed the single-page-application approach,
+          choosing to merge server responses directly into a local database.
+        </p>
+        <img class="lozad" data-src="assets/multigloss.png" />
+      </article>
+      <article class="HTML">
+        <h2>Older: Acastio - Online Voting</h2>
+        <p>
+          I was struggling to learn SQL at University, and so created a basic
+          vote-casting website in PHP, allowing 'organisations' to arrange
+          voters in ranges, schedule ballots, and make use of 3 different
+          counting systems. I ended up enjoying using link tables...
+        </p>
+        <video class="lozad" controls loop muted>
+          <source data-src="assets/Acastio_low.webm" type="video/webm" />
+        </video>
+      </article>
+      <article class="android rows">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/DailyGoals"></a
+          >Daily Goals App
+        </h2>
+        <columns>
+          <column>
+            <p>
+              Using Android Studio, I developed a simple app which would allow
+              daily goals with a deficit system, daily records, and handy
+              buttons. I found it a lot more motivating than other apps!
+            </p>
+          </column>
+          <column>
+            <a href="assets/DailyGoals.png"
+              ><img class="cover lozad" data-src="assets/DailyGoals.png"
+            /></a>
+          </column>
+        </columns>
+      </article>
+      <article class="arduino">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/GalaxyOLED"></a
+          >Crude Galaxy Simulator
+        </h2>
+        <columns>
+          <column>
+            <p>
+              I'd written a simple O(n^2) engine while bored, in SFML, but that
+              wasn't challenging enough! I shoehorned it onto an ATtiny85, but
+              it's 60x slower than the video...
+            </p>
+            <p>
+              The display also isn't perfect for it, as it eats 8-bit vertical
+              stripes at a time.
+            </p>
+          </column>
+          <column>
+            <video class="lozad" controls loop>
+              <source
+                data-src="https://github.com/phunanon/GalaxyOLED/raw/master/media/demo.webm"
+                type="video/webm"
+              />
+            </video>
+          </column>
+        </columns>
+      </article>
+      <article class="arduino">
+        <h2>Fencing Hit Detection System</h2>
+        <p>
+          Using an Atmel ATtiny85 with Arduino IDE, I constructed an inexpensive
+          hit-detection device for the sport Fencing, &Eacute;p&eacute;e
+          discipline. It needed to interface with the standard plug, operate
+          within a 40ms timeframe, and power two weapons over a piste of 14m. I
+          only went as far as a hand-soldered working prototype!
+        </p>
+        <columns>
+          <column>
+            <a href="assets/Fense2.jpg"
+              ><img class="fit lozad" data-src="assets/Fense2.jpg"
+            /></a>
+          </column>
+          <column>
+            <a href="assets/Fense3.jpg"
+              ><img class="fit lozad" data-src="assets/Fense3.jpg"
+            /></a>
+          </column>
+        </columns>
+      </article>
+      <article class="arduino">
+        <h2>PAL Pong</h2>
+        <p>
+          Using the Arduino platform (Due/Mega 2560) I implemented the arcade
+          classic Pong to work through PAL TV. Two potentiometers acted as
+          controllers for the paddles, emulating the nostalgic feel of the first
+          consoles! Unfortunately difficult to record due to framerate.
+        </p>
+        <columns>
+          <column>
+            <a href="assets/GameControllers.jpg"
+              ><img class="fit lozad" data-src="assets/GameControllers.jpg"
+            /></a>
+          </column>
+          <column>
+            <iframe
+              class="lozad"
+              data-src="https://www.youtube.com/embed/MPDB5B8uL2k"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </column>
+        </columns>
+      </article>
+      <article class="arduino">
+        <h2>OLED/PAL Raycaster</h2>
+        <p>
+          Using the Arduino platform (Mega 2560) I ported
+          <a href="http://lodev.org/cgtutor/raycasting.html">this tutorial</a>
+          into Arduino C++, and utilised the
+          <a href="https://github.com/adafruit/Adafruit_SSD1306"
+            >Adafruit SSD13076 library</a
+          >
+          and
+          <a href="https://github.com/Avamander/arduino-tvout">TVout library</a>
+          for display. They both used the same interface for movement as the
+          Pong game.
+        </p>
+        <columns>
+          <column>
+            <a href="assets/ArduinoOLEDRaycast.jpg"
+              ><img class="fit lozad" data-src="assets/ArduinoOLEDRaycast.jpg"
+            /></a>
+          </column>
+          <column>
+            <a href="assets/ArduinoPALRaycast.jpg"
+              ><img class="fit lozad" data-src="assets/ArduinoPALRaycast.jpg"
+            /></a>
+          </column>
+        </columns>
+      </article>
+      <article class="SFML">
+        <h2>Raycast First-person Shooter</h2>
+        <p>
+          For my HND Applied Computing project, I chose to create an SFML/C++
+          raycaster using the same core-code as in projects above, but textured.
+          I still have a lot to flesh out in order to make it a fun, dynamic
+          game!
+        </p>
+        <iframe
+          class="lozad"
+          data-src="https://www.youtube.com/embed/swGqpTGfVqI"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article class="terminal">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/CCircuit"></a
+          >Basic Circuit Simulator
+        </h2>
+        <p>
+          Written in C++ for Linux terminal, this program allows you to create
+          and step-through simple yet functional circuits. The animation
+          demonstrates a compact hh:mm:ss clock design being simulated.
+        </p>
+        <video class="lozad" controls>
+          <source
+            data-src="https://github.com/phunanon/CCircuit/raw/master/media/CCircuit-hhmmss-clock.webm"
+            type="video/webm"
+          />
+        </video>
+        <a href="https://github.com/phunanon/CCircuit/raw/master/media"
+          >More videos</a
+        >
+      </article>
+      <article class="SFML">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/Sircuit"></a
+          >Basic Circuit Simulator Revival
+        </h2>
+        <p>
+          C++/SFML, completely rethinks the approach to an easy-to-use circuit
+          simulator. Though the code for the terminal one is <i>awful</i>, I
+          still prefer its functionality...
+        </p>
+        <a
+          href="https://github.com/phunanon/Sircuit/raw/master/media/add_and_display_min.png"
+        >
+          <img
+            src="https://github.com/phunanon/Sircuit/raw/master/media/add_and_display_min.png"
+          />
+        </a>
+      </article>
+      <article class="SFML">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/Pahjong"></a
+          >Mahjong
+        </h2>
+        <columns>
+          <column>
+            <p>
+              A simple implementation of the classic virtual Mahjong. Written in
+              C++ using the SFML framework, it was a personal experiment into
+              basic graphical applications.
+            </p>
+          </column>
+          <column>
+            <a href="assets/Pahjong.png"
+              ><img class="lozad" data-src="assets/Pahjong.png"
+            /></a>
+          </column>
+        </columns>
+      </article>
+      <article class="arduino">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/FlintOS"></a
+          >Basic Arduino OS
+        </h2>
+        <p>
+          I've always wanted to create something with even the semblance of an
+          OS, so I created FlintOS. It loads programs from ATtiny85's EEPROM,
+          and executes them with a basic instruction set. I wrote a binary
+          reader and a writer, in the instruction set, so it's good to go.
+        </p>
+        <a
+          href="https://github.com/phunanon/FlintOS/raw/master/media/binary_reader.jpg"
+        >
+          <img
+            src="https://github.com/phunanon/FlintOS/raw/master/media/binary_reader.jpg"
+          />
+        </a>
+      </article>
+      <article class="SFML">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/Panfield"></a
+          >Canfield (Solitaire)
+        </h2>
+        <p>
+          Another simple implementation of a tile-based game, this app
+          incorporates dragging, auto-placement, animated finish, and a timer
+          with auto-pause. The newest version looks a little bit better, with a
+          random rotation of cards!
+        </p>
+        <a href="assets/Panfield.png"
+          ><img class="lozad" data-src="assets/Panfield.png"
+        /></a>
+      </article>
+      <article class="SFML">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/Society"></a
+          >RTS Game
+        </h2>
+        <columns>
+          <column>
+            <p>
+              A bare-bones Real Time Strategy game implemented in C++/SFML
+              &ndash; my first isometric graphical program. My goal was to
+              generate AI towns/villages, gigantic maps (JIT map building, etc),
+              and try to create a realistic economic setting.
+            </p>
+          </column>
+          <column>
+            <iframe
+              class="lozad"
+              data-src="https://www.youtube.com/embed/HeqjruvEFNc"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </column>
+        </columns>
+      </article>
+      <article class="terminal">
+        <h2>Homebrew Pathfinding</h2>
+        <columns>
+          <column>
+            <p>
+              Requiring a less CPU-intensive solution, with approximate routes,
+              I took on the fun challenge of writing my own pathfinding.
+              Governed by 7 steps, I ported it into the RTS Game featured above.
+              The video demonstrates its execution. Can still be optimised
+              further.
+            </p>
+          </column>
+          <column>
+            <iframe
+              class="lozad"
+              data-src="https://www.youtube.com/embed/fvYZVBHAE7s"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </column>
+        </columns>
+      </article>
+      <article class="HTML">
+        <h2>Basic Pixelart Editor</h2>
+        <p>
+          As our college course was part-time, I helped implement a peer's HND
+          project to her design documentation, using HTML/CSS/JS.
+        </p>
+        <a href="assets/Pixelpoint.png"
+          ><img class="lozad" data-src="assets/Pixelpoint.png"
+        /></a>
+      </article>
+      <article class="terminal">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/Barebrain"></a
+          >Brainf**k Interpreter
+        </h2>
+        <columns>
+          <column>
+            <p>
+              A black-box
+              <a href="https://en.wikipedia.org/wiki/Brainfuck">Brainf**k</a>
+              interpreter, implemented in C and Python. It uses simple registers
+              to repeat commands and cache loops. Could be improved by
+              implementing optimisations as suggested by its community,
+              multi-threaded printing, and perhaps even rudimentary branching.
+            </p>
+          </column>
+          <column>
+            <iframe
+              class="lozad"
+              data-src="https://www.youtube.com/embed/BhlzdLiVNNc"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </column>
+        </columns>
+      </article>
+      <article class="HTML">
+        <h2>Faux-machine Code Emulator</h2>
+        <p>
+          For an assignment in college we were required to show a basic
+          understanding of machine code. I went one step further than basic Z80,
+          and created my own Javascript emulator and instruction set.
+        </p>
+        <a href="assets/Pavascode.png"
+          ><img class="lozad" data-src="assets/Pavascode.png"
+        /></a>
+      </article>
+      <article class="terminal">
+        <h2>Ascii Free-roam Game</h2>
+        <p>
+          In early 2016, two peers and I collaborated on a Linux-based terminal
+          game, based around having a big expanse to explore, and AIs which
+          would perform tasks autonomously. After the collaboration, I set out
+          to write my own version of the AI my peers implemented, reducing the
+          project to purely my code.
+        </p>
+        <iframe
+          class="lozad"
+          data-src="https://www.youtube.com/embed/j4bJYOMW6s4"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article class="HTML">
+        <h2>
+          <a class="fa github" href="https://github.com/phunanon/JSUno"></a
+          >JSUno
+        </h2>
+        <p>
+          An networked-multiplayer Uno implementation in HTML/CSS/JS+<a
+            href="http://peerjs.com/"
+            >PeerJS</a
+          >
+          utilising WebRTC. With pastel colours and helpful notifications, it is
+          suitable for a virtually unlimited amount of children & adults alike,
+          wherever they are.
+        </p>
+        <columns>
+          <column>
+            <a href="assets/JSUno1.png"
+              ><img class="fit lozad" data-src="assets/JSUno1.png"
+            /></a>
+          </column>
+          <column>
+            <a href="assets/JSUno2.png"
+              ><img class="fit lozad" data-src="assets/JSUno2.png"
+            /></a>
+          </column>
+        </columns>
+      </article>
+      <h2>And much more not included...</h2>
+    </portfolio>
   </body>
 </html>
