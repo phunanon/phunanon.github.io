@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrick Bowen's Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+    <script>
+      window.addEventListener('load', function () {
+        const observer = lozad();
+        observer.observe();
+      });
+    </script>
+    <script src="/navbar.js"></script>
+  </head>
+  <body class="portfolio">
+    <section>
+      <h1>Technology Experience</h1>
+      <wall>
+        <article class="Csharp">
+          <h2>C#</h2>
+          <pills>
+            <pill>Professional since 2018</pill>
+          </pills>
+          <p>
+            All my professional roles have been primarily .NET / C#, from
+            industrial to web, from WinForms to REST APIs, learning how to
+            develop for high performance and throughput, and how to architect
+            for maintainability and testability. I have used it since 2013 but
+            rarely for hobby work.
+          </p>
+          <p>
+            My use of C# matured when I joined Mi-Voice, because my previous two
+            roles had 0% unit test coverage. Now I enjoy 100% test coverage,
+            right down to counting the number of times a method is called with
+            exact parameters. It made me realise why my previous role was so
+            frustrating, because we would just arbitrarily pick up whatever
+            architectures Microsoft suggested, and a lack of unit tests meant we
+            didn't benefit nor implement them correctly! And of course the
+            endless regressions; they eventually hired QA which was super
+            helpful but probably redundant if we were given the time to test.
+          </p>
+        </article>
+        <article class="HTML">
+          <h2>TypeScript</h2>
+          <pills>
+            <pill>Professional since 2021</pill>
+            <pill>User since 2021</pill>
+          </pills>
+          <p>
+            I adore TypeScript and its ecosystem - undoubtedly my favourite
+            programming language. I'm a huge advocate of it over using
+            JavaScript directly and employ TS in the majority of my personal
+            projects, as well as every day at work.
+          </p>
+          <p>
+            I'm even mad enough that I love using TS as a backend, as I often
+            have for Discord bots and what's essentially systems programming in
+            <a href="https://screeps.com">Screeps</a>. Haven't been able to use
+            TS as a backend technology at work yet though.
+          </p>
+        </article>
+        <article class="HTML">
+          <h2>JavaScript</h2>
+          <pills>
+            <pill>Professional since 2019</pill>
+            <pill>User since 2011</pill>
+          </pills>
+          <p>
+            I have become all too familiar with JavaScript in my life - I
+            practically grew up with it. JS was the only programming language I
+            was able to use at school so I ended up learning it in the library
+            every lunchtime&ndash;fun times.
+          </p>
+          <p>
+            Professionally I got to start using JS in my GE role for demos, my
+            second role involved mostly JQuery, and my third role extensively
+            used TypeScript.
+          </p>
+        </article>
+        <article class="arduino">
+          <h2>C++</h2>
+          <pills>
+            <pill>User since 2013</pill>
+          </pills>
+          <p>
+            I have been using C++ on-and-off ever since first exposure. I turn
+            to it for any high-performance work. I enjoy using it in constrained
+            environments such as Arduino, designing programming languages and
+            operating systems, and I have made few simple games in the past too.
+          </p>
+          <p>
+            I was once offered a job in C++, which gives me confidence every
+            time I return to the language and I've inevitably become rusty.
+          </p>
+        </article>
+        <article class="HTML">
+          <h2>React</h2>
+          <pills>
+            <pill>Professional since 2022</pill>
+          </pills>
+          <p>
+            Don't think of React as an innocent web technology - it is a beast.
+            That said, take the right approaches, with TypeScript, and you'll
+            end up with sprawling yet maintainable web apps. Trying to go back
+            to imperative style JavaScript after becoming familiar with React is
+            painful.
+          </p>
+          <p>
+            However, I haven't used React outside of work - I think none of my
+            web hobby projects are ever big enough to warrant it, and for my one
+            reactive hobby project I used SolidJS instead.
+          </p>
+        </article>
+        <article class="terminal">
+          <h2>SQL</h2>
+          <pills>
+            <pill>Professional since 2020</pill>
+            <pill>User since 2019</pill>
+          </pills>
+          <p>
+            At university I disliked learning about SQL, and yet it was one of
+            the only things I walked away from campus having learned. In the
+            beginning I thought it was useless when I could just process data
+            directly in my application code - an infantile notion. My
+            appreciation for relational databases grew as I began tutoring my
+            students about it - basically learning it over and over, so that all
+            that stuff about normalisation and such really hammers in.
+          </p>
+          <p>
+            Now, I use SQLite in a lot of my personal projects, and have worked
+            professionally with Microsoft SQL Server since 2020.
+          </p>
+        </article>
+        <article>
+          <h2>Clojure</h2>
+          <pills>
+            <pill>Used 2019&ndash;2022</pill>
+          </pills>
+          <p>
+            I was once a happy Clojure (and ClojureScript) user - it was how I
+            learned functional programming, and ever since learning it all my
+            homegrown programming languages (e.g.
+            <a href="https://phunanon.github.io/Chika/">Chika</a>,
+            <a href="https://insitux.github.io/">Insitux</a>) have been heavily
+            inspired by it. Clojure freed me from rigid OOP and static typing,
+            and I even did my dissertation in it, and a few major hobby projects
+            at the time. It's an impressive language and I still recommend every
+            programmer tries it out - a mental exercise you'd struggle to find
+            elsewhere. I didn't even use it like a LISP - I probably only wrote
+            one macro in my life.
+          </p>
+          <p>
+            I stopped using it because something made static typing sexy again:
+            TypeScript. However, I still yearn for its solid and performant
+            immutable data structures, its terse code, its philosophy, and I
+            wish I could have used it professionally because I'm sure there's
+            plenty of features and approaches I'm unaware of that could rival
+            TypeScript. I also wish I could have used Datomic, because it seems
+            really cool.
+          </p>
+        </article>
+      </wall>
+    </section>
+    <section>
+      <h1>2018-19 - Baker Hughes, a GE company</h1>
+      <p>
+        A primarily C# role in the oil & gas industry, with regular
+        collaboration between other industry fields. Due to the nature of the
+        work not much material is available to share.
+      </p>
+      <wall>
+        <article class="Csharp">
+          <h2>Poster - Software Dev. in Downhole Eng.</h2>
+          <p>
+            This poster by me was part of a gallery by all interns on site. It
+            shows four screenshots of WinForms projects I developed solo.
+          </p>
+          <a href="/assets/poster.png">
+            <img class="cover lozad" data-src="/assets/poster.png" />
+            Click to enlarge.
+          </a>
+        </article>
+        <article class="Csharp">
+          <h2>"Sondex Kernel" - MQTT broker</h2>
+          <p>
+            The vision of the software management at the start of my role was to
+            rein-in decades' worth of utilities and software suites to one
+            communication protocol.
+          </p>
+          <p>
+            It was decided to use one akin to MQTT, which would be translated to
+            an embed-suitable protocol on-the-fly. I helped architect and test
+            this new platform with their senior engineer. It became the "Sondex
+            Ultracom" platform.
+          </p>
+          <p>
+            After development, to begin developing a new Ultracom
+            utility&mdash;however small&mdash;required including up to fifteen
+            .NET libraries. It was required to use ever-evolving boilerplate to
+            operate them. I couldn't tolerate this.
+          </p>
+          <p>
+            I was granted the time to investigate solving this issue, and
+            architected what I called the "Kernel." It became the sole
+            dependency on a project, and at runtime would use reflection to
+            orchestrate one communication "daemon" and one or more "modules".
+            The Kernel provided a thin abstraction between the two types of
+            actor, and completely divorced our business logic from our
+            communication logic for any project. It also made "modules"
+            composable between each other, using MQTT. It sincerely was my
+            favourite programming project of all time.
+          </p>
+        </article>
+        <article class="Csharp">
+          <h2>Live WebSocket tool control/monitoring</h2>
+          <columns>
+            <column>
+              <p>
+                As an experiment I developed a C# web-server with an Ultracom
+                MQTT backend, allowing you to remotely monitor and control
+                devices over the internet.
+              </p>
+              <p>
+                The screenshot shows the web-app used, controlling and
+                monitoring a caliper tool &ndash; used to measure the diameter
+                and integrity of oil wells. Here the calipers were depressed by
+                hand on one side.
+              </p>
+              <p>
+                Not only popular with coworkers, but the local visiting school
+                for demonstrations too!
+              </p>
+            </column>
+            <column>
+              <a href="/assets/WebSocket Calipers.png">
+                <img
+                  class="cover lozad"
+                  data-src="/assets/WebSocket Calipers.png"
+                />
+                Click to enlarge
+              </a>
+            </column>
+          </columns>
+        </article>
+        <article class="Csharp">
+          <h2>Model-View-Presenter pattern document</h2>
+          <columns>
+            <column>
+              <p>
+                I was made to learn MVP at work&mdash;something I thought
+                wouldn't be of use to me at the time. However I came to fully
+                appreciate software patterns and architectures.
+              </p>
+              <p>
+                Older coworkers managed to avoid good practise, resulting in
+                very tightly-coupled, difficult to maintain programs. In an
+                effort to combat this I wrote a document on how&mdash;and
+                why&mdash;to use the Model-View-Presenter pattern in WinForms
+                projects.
+              </p>
+            </column>
+            <column>
+              <a href="/assets/MVP Guide.pdf">
+                <img class="cover lozad" data-src="/assets/MVP Guide.png" />
+                Click to read PDF
+              </a>
+            </column>
+          </columns>
+        </article>
+      </wall>
+      <contributions>
+        <h2>Miscellaneous contributions</h2>
+        <p>3rd party comms. translation</p>
+        <p>Successful investigation and adoption of .NET Core</p>
+        <p>.NET Framework to Core automated porting utility</p>
+        <p>Combining and porting two firmware console utilities into one GUI</p>
+        <p>Ported a critical VB6 app to C#</p>
+        <p>
+          Modernised a critical utility developed in the time of experimental
+          comms
+        </p>
+        <p>Collaborated in a LabView adapter for Ultracom</p>
+        <p>Proof-of-concept proprietary database C# adapter</p>
+        <p>A simple scripting language for tool control</p>
+        <p>
+          Proof-of-concept deterministic embedded histogram compression, 42%
+          worse-case
+        </p>
+        <p>Aid in revival of Azure DevOps use</p>
+        <p>Co-presented to local school children</p>
+        <p>Presented 45-min Q&A lecture on VBA to 55 UK-wide interns</p>
+        <p>Participated in "Dragon's Den" style Year 7's school activity</p>
+        <h3>Physicist, Mechanical, and Manufacturing collaborations</h3>
+        <p>Histogram bulk experimental analysis suite</p>
+        <p>Monte-Carlo optical simulator implementing Snell's Law</p>
+        <p>Set out and delegated a data processing workflow</p>
+        <p>
+          Collaborated to develop an equipment testbox with software utility
+        </p>
+        <p>Virtual oscilloscope over USB & TCP/IP</p>
+        <p>Magnetic field 3-axis diagnostic app</p>
+      </contributions>
+    </section>
+  </body>
+</html>

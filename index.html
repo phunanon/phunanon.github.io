@@ -2,789 +2,219 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta viewport="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patrick Bowen's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
-    ></script>
-    <script>
-      function DomLoad() {
-        const observer = lozad();
-        observer.observe();
-      }
-    </script>
+    <script src="navbar.js"></script>
   </head>
-
-  <body onload="DomLoad()">
-    <page>
-      <div class="header-container">
-        <div class="Name"><h1>Patrick Bowen</h1></div>
-        <div class="Area">
-          <h4>Location</h4>
-          Hampshire, UK
-        </div>
-        <div class="Email">
-          <h4>Email</h4>
-          <a href="mailto:phun@proton.me">phun@proton.me</a>
-        </div>
-        <div class="Mobile"></div>
-        <div class="Portfolio">
-          <h4>Portfolio</h4>
-          <a href="https://phunanon.github.io">phunanon.github.io</a>
-        </div>
-        <div class="Profile">
-          <p>
-            Graduate, hobbyist, tutor, freelance, and professional in
-            technologies from full-stack web to electronics.
-          </p>
-          <p>
-            Enjoys inter-discipline teamwork, problem solving, system
-            architecture, and keeping skills modern.
-          </p>
-        </div>
-      </div>
-      <h2>Education</h2>
-      <div class="education-container">
-        <div class="University">
-          <h3>Staffordshire<br />University</h3>
-          <h4>Sept 2015 &ndash; June 2020</h4>
-        </div>
-        <div class="Degree">BSc (Hons) Computing Science</div>
-        <div class="Hnd">HND Applied Computing</div>
-        <div class="DegreeAward award">1st Class</div>
-        <div class="HndAward award">Distinction</div>
-        <div class="Line"></div>
-        <div class="College">
-          <h3>Shrewsbury<br />College</h3>
-          <h4>Sept 2013 &ndash; July 2015</h4>
-        </div>
-        <div class="Diploma">BTEC Extended Dip. Computing & I.T</div>
-        <div class="DiplomaAward award">DDM</div>
-      </div>
-      <h2>Career Experience</h2>
-      <div class="career-container">
-        <div class="Inbox">
-          <h3>Inbox Insight Ltd.</h3>
-          <h4>August 2020 &ndash; present | B2B marketing</h4>
-        </div>
-        <div class="InboxTech">
-          <tech><span>C#</span><span>TypeScript</span></tech>
-          <tech><span>.NET 6</span><span>Framework</span></tech>
-          <tech><span>MVC</span><span>Webpack</span></tech>
-          <tech><span>Git</span><span>Azure</span></tech>
-          <tech><span>EF</span><span>SQL</span></tech>
-        </div>
-        <div class="InboxInfo">
-          Full-stack web developer role. Maintaining and extending both internal
-          and external websites; software, micro-services, internal and 3rd
-          party APIs; near total deprecation/replacement of systems during time
-          there. Agile, iterative, one of the first members of a growing team.
-        </div>
-        <div class="Line"></div>
-        <div class="GeInfo">
-          Internship in oil & gas well data acquisition: analysis &
-          visualisation, physics simulation, compression, misc. utilities.
-          Agile, with project-manager. Operation of high-voltage equipment.
-          Conducted UK-wide presentations, tours and Python classes for
-          children. Was offered a full-time position after university.
-        </div>
-        <div class="Ge">
-          <h3>General Electric / Baker Hughes</h3>
-          <h4>July 2018 &ndash; July 2019 | Oilfield services & equipment</h4>
-        </div>
-        <div class="GeTech">
-          <tech><span>C#</span><span>C++</span></tech>
-          <tech><span>Framework</span><span>.NET Core</span></tech>
-          <tech><span>WinForms</span><span>WPF</span></tech>
-          <tech><span>MQTT</span><span>WebSockets</span></tech>
-          <tech><span>SVN</span><span>DevOps</span></tech>
-        </div>
-      </div>
-    </page>
-    <page class="spaced-headers">
-      <h2>Personal Experience</h2>
-      <p>
-        Please do visit
-        <a href="https://phunanon.github.io">my portfolio</a> listing most of my
-        notable projects.
-      </p>
-      <h3>Flagship project &ndash; Insitux scripting language</h3>
-      <ul>
-        <li>
-          Developer and maintainer of extensible scripting language, written in
-          TS
-        </li>
-        <li>
-          Targets Node, web, and Roblox (its originally commissioned platform)
-        </li>
-        <li>TDD methodology, full user-facing documentation coverage</li>
-        <li>Fostered a community of over 300 members, recorded tutorials</li>
-        <li>
-          <a href="https://insitux.github.io"> insitux.github.io </a>
-        </li>
-      </ul>
-      <h3>Private tutoring</h3>
-      <div class="tech-container pt">
-        <div class="Technologies">
-          <tech><span>Python</span><span>HTML5, JS, TS</span></tech>
-          <tech><span>Java, MDE</span><span>SQL, R</span></tech>
-          <tech><span>C#, VB.NET</span><span>C</span></tech>
-        </div>
-        <ul class="Info">
-          <li>
-            Logged over 600 hours as private tutor, 0&ndash;16h per week since
-            2018
-          </li>
-          <li>
-            Tutored all ages, from elementary to post-graduate, short- and
-            long-term tutoring
-          </li>
-          <li>From technical minutiae to comprehensive academic work</li>
-        </ul>
-      </div>
-      <h3>Freelancing</h3>
-      <div class="tech-container pt">
-        <div class="Technologies">
-          <tech><span>IaaS</span><span>HTML5, JS, TS</span></tech>
-          <tech><span>SQLite</span></tech>
-        </div>
-        <ul class="Info">
-          <li>Crypto-market analysis software for one client</li>
-          <li>
-            Utilising multiple free and paid API, IaaS platforms, libraries
-          </li>
-          <li>
-            Implemented data visualisation and analysis, algorithms outside of
-            my personal understanding
-          </li>
-          <li>
-            Implemented portal/proxy with OTP authentication, and OTA updated
-            client-side scripts
-          </li>
-        </ul>
-      </div>
-      <h3>Achievements</h3>
-      <p>
-        <u>General Electric Impact Award</u> worth £70 for 6hr day of teaching
-        Python;
-      </p>
-      <p>
-        <u>vInspired &lsquo;v50&rsquo;</u> (vinspired.com) for voluntary
-        computer literacy teaching;
-      </p>
-      <p>
-        <u>First Aid at Work</u> (expired 2021/03) with St John's Ambulance;
-      </p>
-      <p>
-        &lsquo;Rising Star&rsquo;, 2013, and &lsquo;Most improved&rsquo;, 2015,
-        Shrewsbury College;
-      </p>
-      <p>
-        100% Attendance for multiple terms at college & throughout secondary.
-      </p>
-      <footer>Last updated 2022/04/23</footer>
-    </page>
-    <portfolio>
-      <h1>Enterprise projects & contributions</h1>
-      <h2>2018-19 - Baker Hughes, a GE company</h2>
-      <p>
-        A primarily C# role in the oil & gas industry, with regular
-        collaboration between other industry fields. Due to the nature of the
-        work not much material is available to share.
-      </p>
-      <article class="Csharp">
-        <h2>Poster - Software Dev. in Downhole Eng.</h2>
-        <p>
-          This poster by me was part of a gallery by all interns on site. It
-          shows four screenshots of WinForms projects I developed solo.
-        </p>
-        <a href="assets/poster.png">
-          <img class="cover lozad" data-src="assets/poster.png" />
-          Click to enlarge.
-        </a>
-      </article>
-      <article class="Csharp">
-        <h2>"Sondex Kernel" - MQTT broker</h2>
-        <p>
-          The vision of the software management at the start of my role was to
-          reign-in decades' worth of utilities and software suites to one
-          communication protocol.
-        </p>
-        <p>
-          It was decided to use one akin to MQTT, which would be translated to
-          an embed-suitable protocol on-the-fly. I helped architect and test
-          this new platform with their senior engineer. It became the "Sondex
-          Ultracom" platform.
-        </p>
-        <p>
-          After development, to begin developing a new Ultracom
-          utility&mdash;however small&mdash;required including up to fifteen
-          .NET libraries. It was required to use ever-evolving boilerplate to
-          operate them. I couldn't tolerate this.
-        </p>
-        <p>
-          I was granted the time to investigate solving this issue, and
-          architected what I called the "Kernel." It became the sole dependency
-          on a project, and at runtime would use reflection to orchestrate one
-          communication "daemon" and one or more "modules". The Kernel provided
-          a thin abstraction between the two types of actor, and completely
-          divorced our business logic from our communication logic for any
-          project. It also made "modules" composable between each other, using
-          MQTT. It sincerely was my favourite programming project of all time.
-        </p>
-      </article>
-      <article class="Csharp">
-        <h2>Live WebSocket tool control/monitoring</h2>
-        <columns>
-          <column>
+  <body>
+    <pages>
+      <page>
+        <div class="header-container">
+          <div class="Name"><h1>Patrick Bowen</h1></div>
+          <div class="Area">
+            <h4>Location</h4>
+            <span>Staffordshire, UK</span>
+          </div>
+          <div class="Email">
+            <h4>Email</h4>
+            <a href="mailto:phun@proton.me">phun@proton.me</a>
+          </div>
+          <div class="Portfolio">
+            <h4>Portfolio</h4>
+            <a href="https://phunanon.github.io">phunanon.github.io</a>
+          </div>
+          <div class="Profile">
             <p>
-              As an experiment I developed a C# web-server with an Ultracom MQTT
-              backend, allowing you to remotely monitor and control devices over
-              the internet.
+              Graduate, hobbyist, tutor, freelance, and professional in
+              technologies from full-stack web to electronics.
             </p>
             <p>
-              The screenshot shows the web-app used, controlling and monitoring
-              a caliper tool &ndash; used to measure the diameter and integrity
-              of oil wells. Here the calipers were depressed by hand on one
-              side.
+              I enjoy inter-discipline teamwork, problem solving, system
+              architecture, and keeping skills modern.
             </p>
+          </div>
+        </div>
+        <br />
+        <div class="education-container">
+          <div>
+            <h3>Staffordshire University</h3>
+            <h4>Sept 2015 &ndash; June 2020</h4>
+          </div>
+          <div class="courses">
+            <div class="course">
+              <span>BSc (Hons) Computing Science</span>
+              <span
+                class="DegreeAward award"
+                title="I swear that uni handed them out like candy though."
+              >
+                1st Class
+              </span>
+            </div>
+            <div class="course">
+              <span>HND Applied Computing</span>
+              <span class="HndAward award">Distinction</span>
+            </div>
+          </div>
+        </div>
+        <div class="career-container">
+          <div>
+            <h3>
+              <span>Mi-Voice / Democracy Technology Ltd.</span>
+              <span>July 2022 &ndash; present</span>
+            </h3>
+            <pills>
+              <pill>C#</pill>
+              <pill>TypeScript</pill>
+              <pill>React</pill>
+              <pill>Azure DevOps & PaaS</pill>
+              <pill>SQL</pill>
+              <pill>EF Core</pill>
+            </pills>
             <p>
-              Not only popular with coworkers, but the local visiting school for
-              demonstrations too!
+              One in a team of two full-stack web developers. Online balloting -
+              a voting site and an administration platform. We migrated from
+              on-prem to Azure web services; replaced all .NET Framework MVC
+              apps with a .NET Core REST API and modern front-end web tech. I
+              championed compliance and test coverage, including UI regression
+              tests, mobile and RTL support, and following industry
+              accessibility guidelines. Worked directly with stakeholders to
+              create new admin platform for self-service clients.
             </p>
-          </column>
-          <column>
-            <a href="assets/WebSocket Calipers.png">
-              <img
-                class="cover lozad"
-                data-src="assets/WebSocket Calipers.png"
-              />
-              Click to enlarge
+          </div>
+          <div class="Line"></div>
+          <div>
+            <h3>
+              <span>Inbox Insight Ltd.</span>
+              <span>August 2020 &ndash; May 2022</span>
+            </h3>
+            <pills>
+              <pill>C#</pill>
+              <pill>TypeScript</pill>
+              <pill>.NET 6.0 / Framework</pill>
+              <pill>MVC</pill>
+              <pill>Webpack</pill>
+              <pill>Azure DevOps & PaaS</pill>
+              <pill title="Entity Framework">EF</pill>
+              <pill>SQL</pill>
+            </pills>
+            <p>
+              B2B marketing. Full-stack web developer role. Maintaining and
+              extending both internal and external websites; software,
+              micro-services, internal and 3rd party APIs; near total
+              deprecation/replacement of systems during time there. Agile,
+              iterative, one of the first members of a growing team.
+            </p>
+          </div>
+          <div class="Line"></div>
+          <div>
+            <h3>
+              <span>General Electric / Baker Hughes</span>
+              <span>July 2018 &ndash; July 2019</span>
+            </h3>
+            <h4></h4>
+            <pills>
+              <pill>C#</pill>
+              <pill>C++</pill>
+              <pill>.NET Framework / Core 2.2</pill>
+              <pill>WinForms</pill>
+              <pill>WPF</pill>
+              <pill>MQTT</pill>
+              <pill>WebSockets</pill>
+            </pills>
+            <p>
+              Oilfield services & equipment. Internship in well data acquisition
+              & processing: analysis & visualisation, physics simulation,
+              compression, utilities. Agile, with project-manager. Operation of
+              high-voltage equipment. Conducted UK-wide presentations, tours and
+              Python classes for children. I was offered a full-time position
+              after university.
+            </p>
+          </div>
+        </div>
+      </page>
+      <page class="spaced-headers">
+        <h2>Personal Experience</h2>
+        <p>
+          Please do visit my portfolio (<a href="https://phunanon.github.io"
+            >phunanon.github.io</a
+          >) listing most of my notable projects and extensive hobby work.
+        </p>
+        <h3>Flagship project &ndash; StrangerChat</h3>
+        <ul>
+          <li>
+            Anonymous chatting platform with over 12 million messages exchanged.
+          </li>
+          <li>
+            Hosted in the cloud with high uptime, monetised and unfortunately
+            closed-source.
+          </li>
+          <li>
+            Makes extensive use of the Discord API to provide dozens of
+            interactive and passive features.
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/presentation/d/1qWcQ5grTUptuJYpVN2jZi6TiSJRkYp8TDHy8Lr5z904"
+            >
+              Presentation given in April 2025 about the platform
             </a>
-          </column>
-        </columns>
-      </article>
-      <article class="Csharp">
-        <h2>Model-View-Presenter pattern document</h2>
-        <columns>
-          <column>
-            <p>
-              I was made to learn MVP at work&mdash;something I thought wouldn't
-              be of use to me at the time. Since then I've come to fully
-              appreciate software patterns architectures.
-            </p>
-            <p>
-              Older coworkers managed to avoid good practise, resulting in very
-              tightly-coupled, difficult to maintain programs. In an effort to
-              combat this I wrote a document on how&mdash;and why&mdash;to use
-              the Model-View-Presenter pattern in WinForms projects.
-            </p>
-          </column>
-          <column>
-            <a href="assets/MVP Guide.pdf">
-              <img class="cover lozad" data-src="assets/MVP Guide.png" />
-              Click to read PDF
-            </a>
-          </column>
-        </columns>
-      </article>
-      <h2>Miscellaneous contributions</h2>
-      <contributions>
-        <p>3rd party comms. translation</p>
-        <p>Successful investigation and adoption of .NET Core</p>
-        <p>.NET Framework to Core automated porting utility</p>
-        <p>Combining and porting two firmware console utilities into one GUI</p>
-        <p>Ported critical a VB6 app to C#</p>
+          </li>
+        </ul>
+        <section>
+          <h3>As a private tutor</h3>
+          <pills>
+            <pill>Python</pill>
+            <pill>HTML5, JS, TS</pill>
+            <pill>Java, MDE</pill>
+            <pill>SQL, R</pill>
+            <pill>C#, VB.NET</pill>
+            <pill>C, C++</pill>
+          </pills>
+          <ul>
+            <li>Logged 820+ hours, 0&ndash;16h per week since 2018</li>
+            <li>
+              All ages, from elementary to post-graduate, short- and long-term
+              tutoring
+            </li>
+            <li>
+              Everything from technical minutiae to comprehensive academic work
+            </li>
+          </ul>
+        </section>
+        <h3>As a freelance</h3>
+        <div>
+          <pills>
+            <pill>IaaS</pill>
+            <pill>HTML5, JS, TS</pill>
+            <pill>SQLite</pill>
+          </pills>
+          <ul>
+            <li>Crypto-market analysis software for one client</li>
+            <li>
+              Utilising multiple free and paid API, IaaS platforms, libraries
+            </li>
+            <li>
+              Implemented data visualisation and analysis, algorithms outside of
+              my personal understanding
+            </li>
+            <li>
+              Implemented portal/proxy with OTP authentication, and OTA updated
+              client-side scripts
+            </li>
+          </ul>
+        </div>
+        <h3>Latest Achievements</h3>
         <p>
-          Modernised a critical utility developed in the time of experimental
-          comms.
+          2019 <u>General Electric Impact Award</u> worth £70 for 6hr day of
+          teaching Python;
         </p>
-        <p>Collaborated in a LabView adapter for Ultracom</p>
-        <p>Proof-of-concept proprietary database C# adapter</p>
-        <p>A simple scripting language for tool control</p>
         <p>
-          Proof-of-concept deterministic embedded histogram compression, 42%
-          worse-case
+          2015 <u>vInspired &lsquo;v50&rsquo;</u> (vinspired.com) for voluntary
+          computer literacy teaching.
         </p>
-        <p>Aid in revival of Azure DevOps use</p>
-        <p>Co-presented to local school children</p>
-        <p>Presented 45-min Q&A lecture on VBA to 55 UK-wide interns</p>
-        <p>Participated in "Dragon's Den" style Year 7's school activity</p>
-        <h3>Physicist, Mechanical, and Manufacturing collaborations</h3>
-        <p>Histogram bulk experimental analysis suite</p>
-        <p>Monte-Carlo optical simulator implementing Snell's Law</p>
-        <p>Set out and delegated a data processing workflow</p>
-        <p>Collaborated to develop an equipment testbox with soft. utility</p>
-        <p>Virtual oscilloscope over USB & TCP/IP</p>
-        <p>Magnetic field 3-axis diagnostic app</p>
-      </contributions>
-    </portfolio>
-    <portfolio>
-      <h1>Personal & Academic projects</h1>
-      <article class="HTML">
-        <h2>
-          Bachelor's dissertation artefact
-          <a class="fa github" href="https://github.com/phunanon/Competite"></a>
-        </h2>
-        <p>
-          Different sport competitions are implemented with any back-end
-          technology through a HTTP API, synchronised through an immutable
-          message transcript. See screenshots here
-          <a
-            href="https://github.com/phunanon/competite/tree/master/screenshots"
-            >here</a
-          >
-          until I add a gallery to this page; apologies!
-        </p>
-        <a href="assets/CompetiteDiagram.png">
-          <img class="cover lozad" data-src="assets/CompetiteDiagram.png" />
-          Click to enlarge.
-        </a>
-      </article>
-      <article class="arduino">
-        <h2>
-          Arduino & PC programming language
-          <a class="fa github" href="https://github.com/phunanon/Chika"></a>
-        </h2>
-        <p>
-          It's been a dream to have a programmable pocket-PC, and my own
-          programming language. So I am developing a language called Chika in
-          C++. It uses s-expressions, pure functions, immutable values, avoiding
-          heap memory. Already it has a core library and some basic drivers like
-          OLED and keypad. It can even compile <i>on</i> Arduino.
-        </p>
-        <img class="lozad" data-src="assets/Chika-sample.png" />
-      </article>
-      <article class="SFML">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/Infection"></a
-          >Isometric Shooter/Melee Survival
-        </h2>
-        <p>
-          For the Global Games Jam 2018
-          <a href="http://danielshare.co.uk/">another student</a> and I built a
-          game from scratch within 48 hours in C++. Unfortunately, neither of us
-          knew the correct graphical approach at the time, but it was a fun and
-          valuable experience, exposing my limits and abilites!
-        </p>
-        <iframe
-          class="lozad"
-          data-src="https://www.youtube.com/embed/DohsSo4k-ps"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </article>
-      <article class="HTML">
-        <h2>
-          <a href="https://ocastio.uk">Ocastio.uk</a> - Online Voting
-          <a class="fa github" href="https://github.com/phunanon/Ocastio"></a>
-        </h2>
-        <p>
-          A totally new platform for managing inter-organisational legislation
-          and voting. Hosted on a DigitalOcean 2.2GHz 1GB Droplet, the
-          application runs on the JVM (Java Virtual Machine), and is written in
-          Clojure - a modern functional-paradigm programming language.
-        </p>
-        <iframe
-          class="lozad"
-          data-src="https://www.youtube.com/embed/fhdzdJuhlPU"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </article>
-      <article class="HTML">
-        <h2>
-          Multigloss - a Duolingo clone
-          <a
-            class="fa github"
-            href="https://github.com/phunanon/multigloss"
-          ></a>
-        </h2>
-        <p>
-          An incomplete experiment, looking into ClojureScript and reactive
-          workflow. I really enjoyed the single-page-application approach,
-          choosing to merge server responses directly into a local database.
-        </p>
-        <img class="lozad" data-src="assets/multigloss.png" />
-      </article>
-      <article class="HTML">
-        <h2>Older: Acastio - Online Voting</h2>
-        <p>
-          I was struggling to learn SQL at University, and so created a basic
-          vote-casting website in PHP, allowing 'organisations' to arrange
-          voters in ranges, schedule ballots, and make use of 3 different
-          counting systems. I ended up enjoying using link tables...
-        </p>
-        <video class="lozad" controls loop muted>
-          <source data-src="assets/Acastio_low.webm" type="video/webm" />
-        </video>
-      </article>
-      <article class="android rows">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/DailyGoals"></a
-          >Daily Goals App
-        </h2>
-        <columns>
-          <column>
-            <p>
-              Using Android Studio, I developed a simple app which would allow
-              daily goals with a deficit system, daily records, and handy
-              buttons. I found it a lot more motivating than other apps!
-            </p>
-          </column>
-          <column>
-            <a href="assets/DailyGoals.png"
-              ><img class="cover lozad" data-src="assets/DailyGoals.png"
-            /></a>
-          </column>
-        </columns>
-      </article>
-      <article class="arduino">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/GalaxyOLED"></a
-          >Crude Galaxy Simulator
-        </h2>
-        <columns>
-          <column>
-            <p>
-              I'd written a simple O(n^2) engine while bored, in SFML, but that
-              wasn't challenging enough! I shoehorned it onto an ATtiny85, but
-              it's 60x slower than the video...
-            </p>
-            <p>
-              The display also isn't perfect for it, as it eats 8-bit vertical
-              stripes at a time.
-            </p>
-          </column>
-          <column>
-            <video class="lozad" controls loop>
-              <source
-                data-src="https://github.com/phunanon/GalaxyOLED/raw/master/media/demo.webm"
-                type="video/webm"
-              />
-            </video>
-          </column>
-        </columns>
-      </article>
-      <article class="arduino">
-        <h2>Fencing Hit Detection System</h2>
-        <p>
-          Using an Atmel ATtiny85 with Arduino IDE, I constructed an inexpensive
-          hit-detection device for the sport Fencing, &Eacute;p&eacute;e
-          discipline. It needed to interface with the standard plug, operate
-          within a 40ms timeframe, and power two weapons over a piste of 14m. I
-          only went as far as a hand-soldered working prototype!
-        </p>
-        <columns>
-          <column>
-            <a href="assets/Fense2.jpg"
-              ><img class="fit lozad" data-src="assets/Fense2.jpg"
-            /></a>
-          </column>
-          <column>
-            <a href="assets/Fense3.jpg"
-              ><img class="fit lozad" data-src="assets/Fense3.jpg"
-            /></a>
-          </column>
-        </columns>
-      </article>
-      <article class="arduino">
-        <h2>PAL Pong</h2>
-        <p>
-          Using the Arduino platform (Due/Mega 2560) I implemented the arcade
-          classic Pong to work through PAL TV. Two potentiometers acted as
-          controllers for the paddles, emulating the nostalgic feel of the first
-          consoles! Unfortunately difficult to record due to framerate.
-        </p>
-        <columns>
-          <column>
-            <a href="assets/GameControllers.jpg"
-              ><img class="fit lozad" data-src="assets/GameControllers.jpg"
-            /></a>
-          </column>
-          <column>
-            <iframe
-              class="lozad"
-              data-src="https://www.youtube.com/embed/MPDB5B8uL2k"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </column>
-        </columns>
-      </article>
-      <article class="arduino">
-        <h2>OLED/PAL Raycaster</h2>
-        <p>
-          Using the Arduino platform (Mega 2560) I ported
-          <a href="http://lodev.org/cgtutor/raycasting.html">this tutorial</a>
-          into Arduino C++, and utilised the
-          <a href="https://github.com/adafruit/Adafruit_SSD1306"
-            >Adafruit SSD13076 library</a
-          >
-          and
-          <a href="https://github.com/Avamander/arduino-tvout">TVout library</a>
-          for display. They both used the same interface for movement as the
-          Pong game.
-        </p>
-        <columns>
-          <column>
-            <a href="assets/ArduinoOLEDRaycast.jpg"
-              ><img class="fit lozad" data-src="assets/ArduinoOLEDRaycast.jpg"
-            /></a>
-          </column>
-          <column>
-            <a href="assets/ArduinoPALRaycast.jpg"
-              ><img class="fit lozad" data-src="assets/ArduinoPALRaycast.jpg"
-            /></a>
-          </column>
-        </columns>
-      </article>
-      <article class="SFML">
-        <h2>Raycast First-person Shooter</h2>
-        <p>
-          For my HND Applied Computing project, I chose to create an SFML/C++
-          raycaster using the same core-code as in projects above, but textured.
-          I still have a lot to flesh out in order to make it a fun, dynamic
-          game!
-        </p>
-        <iframe
-          class="lozad"
-          data-src="https://www.youtube.com/embed/swGqpTGfVqI"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </article>
-      <article class="terminal">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/CCircuit"></a
-          >Basic Circuit Simulator
-        </h2>
-        <p>
-          Written in C++ for Linux terminal, this program allows you to create
-          and step-through simple yet functional circuits. The animation
-          demonstrates a compact hh:mm:ss clock design being simulated.
-        </p>
-        <video class="lozad" controls>
-          <source
-            data-src="https://github.com/phunanon/CCircuit/raw/master/media/CCircuit-hhmmss-clock.webm"
-            type="video/webm"
-          />
-        </video>
-        <a href="https://github.com/phunanon/CCircuit/raw/master/media"
-          >More videos</a
-        >
-      </article>
-      <article class="SFML">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/Sircuit"></a
-          >Basic Circuit Simulator Revival
-        </h2>
-        <p>
-          C++/SFML, completely rethinks the approach to an easy-to-use circuit
-          simulator. Though the code for the terminal one is <i>awful</i>, I
-          still prefer its functionality...
-        </p>
-        <a
-          href="https://github.com/phunanon/Sircuit/raw/master/media/add_and_display_min.png"
-        >
-          <img
-            src="https://github.com/phunanon/Sircuit/raw/master/media/add_and_display_min.png"
-          />
-        </a>
-      </article>
-      <article class="SFML">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/Pahjong"></a
-          >Mahjong
-        </h2>
-        <columns>
-          <column>
-            <p>
-              A simple implementation of the classic virtual Mahjong. Written in
-              C++ using the SFML framework, it was a personal experiment into
-              basic graphical applications.
-            </p>
-          </column>
-          <column>
-            <a href="assets/Pahjong.png"
-              ><img class="lozad" data-src="assets/Pahjong.png"
-            /></a>
-          </column>
-        </columns>
-      </article>
-      <article class="arduino">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/FlintOS"></a
-          >Basic Arduino OS
-        </h2>
-        <p>
-          I've always wanted to create something with even the semblance of an
-          OS, so I created FlintOS. It loads programs from ATtiny85's EEPROM,
-          and executes them with a basic instruction set. I wrote a binary
-          reader and a writer, in the instruction set, so it's good to go.
-        </p>
-        <a
-          href="https://github.com/phunanon/FlintOS/raw/master/media/binary_reader.jpg"
-        >
-          <img
-            src="https://github.com/phunanon/FlintOS/raw/master/media/binary_reader.jpg"
-          />
-        </a>
-      </article>
-      <article class="SFML">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/Panfield"></a
-          >Canfield (Solitaire)
-        </h2>
-        <p>
-          Another simple implementation of a tile-based game, this app
-          incorporates dragging, auto-placement, animated finish, and a timer
-          with auto-pause. The newest version looks a little bit better, with a
-          random rotation of cards!
-        </p>
-        <a href="assets/Panfield.png"
-          ><img class="lozad" data-src="assets/Panfield.png"
-        /></a>
-      </article>
-      <article class="SFML">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/Society"></a
-          >RTS Game
-        </h2>
-        <columns>
-          <column>
-            <p>
-              A bare-bones Real Time Strategy game implemented in C++/SFML
-              &ndash; my first isometric graphical program. My goal was to
-              generate AI towns/villages, gigantic maps (JIT map building, etc),
-              and try to create a realistic economic setting.
-            </p>
-          </column>
-          <column>
-            <iframe
-              class="lozad"
-              data-src="https://www.youtube.com/embed/HeqjruvEFNc"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </column>
-        </columns>
-      </article>
-      <article class="terminal">
-        <h2>Homebrew Pathfinding</h2>
-        <columns>
-          <column>
-            <p>
-              Requiring a less CPU-intensive solution, with approximate routes,
-              I took on the fun challenge of writing my own pathfinding.
-              Governed by 7 steps, I ported it into the RTS Game featured above.
-              The video demonstrates its execution. Can still be optimised
-              further.
-            </p>
-          </column>
-          <column>
-            <iframe
-              class="lozad"
-              data-src="https://www.youtube.com/embed/fvYZVBHAE7s"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </column>
-        </columns>
-      </article>
-      <article class="HTML">
-        <h2>Basic Pixelart Editor</h2>
-        <p>
-          As our college course was part-time, I helped implement a peer's HND
-          project to her design documentation, using HTML/CSS/JS.
-        </p>
-        <a href="assets/Pixelpoint.png"
-          ><img class="lozad" data-src="assets/Pixelpoint.png"
-        /></a>
-      </article>
-      <article class="terminal">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/Barebrain"></a
-          >Brainf**k Interpreter
-        </h2>
-        <columns>
-          <column>
-            <p>
-              A black-box
-              <a href="https://en.wikipedia.org/wiki/Brainfuck">Brainf**k</a>
-              interpreter, implemented in C and Python. It uses simple registers
-              to repeat commands and cache loops. Could be improved by
-              implementing optimisations as suggested by its community,
-              multi-threaded printing, and perhaps even rudimentary branching.
-            </p>
-          </column>
-          <column>
-            <iframe
-              class="lozad"
-              data-src="https://www.youtube.com/embed/BhlzdLiVNNc"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </column>
-        </columns>
-      </article>
-      <article class="HTML">
-        <h2>Faux-machine Code Emulator</h2>
-        <p>
-          For an assignment in college we were required to show a basic
-          understanding of machine code. I went one step further than basic Z80,
-          and created my own Javascript emulator and instruction set.
-        </p>
-        <a href="assets/Pavascode.png"
-          ><img class="lozad" data-src="assets/Pavascode.png"
-        /></a>
-      </article>
-      <article class="terminal">
-        <h2>Ascii Free-roam Game</h2>
-        <p>
-          In early 2016, two peers and I collaborated on a Linux-based terminal
-          game, based around having a big expanse to explore, and AIs which
-          would perform tasks autonomously. After the collaboration, I set out
-          to write my own version of the AI my peers implemented, reducing the
-          project to purely my code.
-        </p>
-        <iframe
-          class="lozad"
-          data-src="https://www.youtube.com/embed/j4bJYOMW6s4"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </article>
-      <article class="HTML">
-        <h2>
-          <a class="fa github" href="https://github.com/phunanon/JSUno"></a
-          >JSUno
-        </h2>
-        <p>
-          An networked-multiplayer Uno implementation in HTML/CSS/JS+<a
-            href="http://peerjs.com/"
-            >PeerJS</a
-          >
-          utilising WebRTC. With pastel colours and helpful notifications, it is
-          suitable for a virtually unlimited amount of children & adults alike,
-          wherever they are.
-        </p>
-        <columns>
-          <column>
-            <a href="assets/JSUno1.png"
-              ><img class="fit lozad" data-src="assets/JSUno1.png"
-            /></a>
-          </column>
-          <column>
-            <a href="assets/JSUno2.png"
-              ><img class="fit lozad" data-src="assets/JSUno2.png"
-            /></a>
-          </column>
-        </columns>
-      </article>
-      <h2>And much more not included...</h2>
-    </portfolio>
+        <footer>Last updated 2025/04/12 | printer friendly</footer>
+      </page>
+    </pages>
   </body>
 </html>
